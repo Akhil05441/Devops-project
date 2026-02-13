@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🫀 Heart Disease Detection</h1>
+
+    <form id="heartForm">
+        <input type="number" id="age" placeholder="Age" required>
+        <input type="number" id="cholesterol" placeholder="Cholesterol Level" required>
+        <input type="number" id="bloodPressure" placeholder="Blood Pressure" required>
+
+        <label>Smoking:</label>
+        <select id="smoking">
+            <option value="no">No</option>
+            <option value="yes">Yes</option>
+        </select>
+
+        <label>Diabetes:</label>
+        <select id="diabetes">
+            <option value="no">No</option>
+            <option value="yes">Yes</option>
+        </select>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <h2 id="result"></h2>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
